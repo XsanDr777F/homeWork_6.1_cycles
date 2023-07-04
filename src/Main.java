@@ -6,6 +6,7 @@ public class Main {
         task_3_1();
         task_4();
         task_5();
+        task_5_1();
         task_6();
         task_6_1();
         task_7();
@@ -62,6 +63,13 @@ public class Main {
         }
     }
 
+    public static void task_5_1() {
+        System.out.println("задача 5 (доработка)");
+        for (int y = 1904; y <= 2096; y = y + 4) {
+            System.out.println(y + " год является высокостным");
+        }
+    }
+
     public static void task_6() {
         System.out.println("Задача 6");
         for (int i = 1; i <= 98; i++) {
@@ -102,10 +110,11 @@ public class Main {
         System.out.println("Задача 9");
 
         int salary = 29000;
-        int total = 0;
+        double total = 0;
+        double percent = 0.012;
 
         for (int i = 1; i <= 12; i++) {
-            total = (int) (total + (total * 0.01));
+            total = (int) (total + (total * percent));
             total = total + salary;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
