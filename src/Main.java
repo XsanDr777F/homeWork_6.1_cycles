@@ -110,11 +110,11 @@ public class Main {
         System.out.println("Задача 9");
 
         int salary = 29000;
-        double total = 0;
-        double percent = 0.012;
+        float total = 0;
+        float percent = 0.012F;
 
         for (int i = 1; i <= 12; i++) {
-            total = (int) (total + (total * percent));
+            total = (total + (total * percent));
             total = total + salary;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
